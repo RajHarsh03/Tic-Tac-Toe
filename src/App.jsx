@@ -91,11 +91,11 @@ function App() {
               <p className="mb-2 text-xs font-black uppercase tracking-[0.18em] text-teal-700">
                 React game
               </p>
-              <h1 className="bg-gradient-to-r from-teal-800 via-cyan-700 to-rose-500 bg-clip-text text-4xl font-black leading-none tracking-normal text-transparent sm:text-5xl">
+              <h1 className="bg-linear-to-r from-teal-800 via-cyan-700 to-rose-500 bg-clip-text text-4xl font-black leading-none tracking-normal text-transparent sm:text-5xl">
                 Tic Tac Toe
               </h1>
             </div>
-            <div className="rounded-lg bg-gradient-to-br from-teal-700 via-cyan-700 to-emerald-600 px-4 py-3 text-white shadow-lg shadow-teal-900/25 sm:min-w-32">
+            <div className="rounded-lg bg-linear-to-br from-teal-700 via-cyan-700 to-emerald-600 px-4 py-3 text-white shadow-lg shadow-teal-900/25 sm:min-w-32">
               <span className="block text-[0.7rem] font-bold uppercase tracking-[0.16em] text-cyan-50/80">
                 Current
               </span>
@@ -111,7 +111,7 @@ function App() {
           </div>
 
           <div
-            className="mx-auto grid w-full max-w-[320px] grid-cols-3 gap-2 rounded-lg bg-gradient-to-br from-teal-700 via-cyan-700 to-emerald-600 p-2 shadow-xl shadow-teal-950/20 min-[420px]:max-w-[360px] sm:max-w-[400px] sm:gap-3 sm:p-3 lg:max-w-[390px]"
+            className="mx-auto grid w-full max-w-80 grid-cols-3 gap-2 rounded-lg bg-linear-to-br from-teal-700 via-cyan-700 to-emerald-600 p-2 shadow-xl shadow-teal-950/20 min-[420px]:max-w-90 sm:max-w-100 sm:gap-3 sm:p-3 lg:max-w-97.5"
             role="grid"
             aria-label="Game board"
           >
@@ -122,7 +122,7 @@ function App() {
                 <button
                   aria-label={`Square ${index + 1}${value ? `, marked ${value}` : ""}`}
                   className={cx(
-                    "aspect-square rounded-lg border border-teal-50 bg-gradient-to-br from-white to-cyan-50/70 text-4xl font-black leading-none shadow-inner shadow-cyan-100 transition duration-200 hover:-translate-y-1 hover:from-white hover:to-emerald-50 hover:shadow-lg hover:shadow-teal-950/10 focus:outline-none focus:ring-4 focus:ring-teal-300/70 disabled:translate-y-0 disabled:cursor-default min-[420px]:text-5xl sm:text-6xl",
+                    "aspect-square rounded-lg border border-teal-50 bg-linear-to-br from-white to-cyan-50/70 text-4xl font-black leading-none shadow-inner shadow-cyan-100 transition duration-200 hover:-translate-y-1 hover:from-white hover:to-emerald-50 hover:shadow-lg hover:shadow-teal-950/10 focus:outline-none focus:ring-4 focus:ring-teal-300/70 disabled:translate-y-0 disabled:cursor-default min-[420px]:text-5xl sm:text-6xl",
                     value === "X" && "text-teal-600",
                     value === "O" && "text-rose-500",
                     isWinningSquare &&
@@ -193,7 +193,7 @@ function App() {
             </div>
             <div className="mt-3 h-2 overflow-hidden rounded-full bg-cyan-100">
               <div
-                className="h-full rounded-full bg-gradient-to-r from-teal-500 via-cyan-500 to-emerald-500 transition-all duration-300"
+                className="h-full rounded-full bg-linear-to-r from-teal-500 via-cyan-500 to-emerald-500 transition-all duration-300"
                 style={{ width: `${(movesPlayed / 9) * 100}%` }}
               />
             </div>
@@ -204,7 +204,7 @@ function App() {
 
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
             <button
-              className="min-h-11 rounded-lg bg-gradient-to-r from-teal-600 to-cyan-600 px-4 font-black text-white shadow-lg shadow-teal-900/20 transition hover:-translate-y-0.5 hover:from-teal-500 hover:to-cyan-500 focus:outline-none focus:ring-4 focus:ring-teal-300/50"
+              className="min-h-11 rounded-lg bg-linear-to-r from-teal-600 to-cyan-600 px-4 font-black text-white shadow-lg shadow-teal-900/20 transition hover:-translate-y-0.5 hover:from-teal-500 hover:to-cyan-500 focus:outline-none focus:ring-4 focus:ring-teal-300/50"
               type="button"
               onClick={resetRound}
             >
