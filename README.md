@@ -32,7 +32,7 @@ Follow these steps to run the project locally.
 ## Clone The Repository
 
 ```bash
-git clone https://github.com/RajHarsh03/Tic-Tac-Toe.git
+git clone https://github.com/RajHarsh03/Tic-Tac-Toe
 ```
 
 Go inside the project folder:
@@ -117,4 +117,7 @@ Tic Tac Toe/
 6. Use `New round` to clear the board.
 7. Use `Reset score` to clear the board and both player scores.
 
+## License
+
+This project is free to use under the MIT License.
 
